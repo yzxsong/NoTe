@@ -26,6 +26,6 @@
 * Registry
 * Docker容器： Container
   
-![Docker架构](https://github.com/yzxsong/NoTe/blob/main/images/Docker%E6%9E%B6%E6%9E%84.png)
+![Docker架构](https://github.com/yzxsong/NoTe/blob/main/images/Docker/Docker%E6%9E%B6%E6%9E%84.png)
 ## 参考资料
 * 《每天5分钟玩转Docker容器技术》
