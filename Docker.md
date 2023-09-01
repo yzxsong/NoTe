@@ -9,4 +9,13 @@
 * Registries：存放image。Docker Registries、Docker Hub、 Quay.io
 * 容器OS:专门运行容器的操作系统。Coreos、atomic、ubuntu core
 ### 容器平台技术
+* 容器编排引擎：通常包括容器管理、调度、集群定义和服务发现等。docker swarm、kubernetes、mesos
+* 容器管理平台：架构在编排引擎之上、支持多种编排引擎。Rancher、ContainerShip
+* 基于容器的PaaS：提供开发、部署和管理应用的平台，使用户不必关心底层基础设施。Deis、Flynn、Dokku
 ### 容器支持技术
+* 容器网络：容器使网络拓扑变的动态和复杂，需要专门的解决方案来管理容器与容器、容器与其他实体之间的连通性和隔离性。docker network、flannel、weave、calico
+* 服务发现：保存容器中所有微服务最新消息，比如IP和端口，并对外提供API、提供服务查询功能。etcd、consul、zookeeper
+* 监控：docker ps/top/stats、docker stats API、sysdig、cAdvisor/Heapster、Weave Scope
+* 数据管理：保持持久化数据也能够动态迁移。Rex-Ray
+* 日志管理:docker logs、logspout
+* 安全性：openSCAP
