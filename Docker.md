@@ -19,9 +19,7 @@
 * 数据管理：保持持久化数据也能够动态迁移。Rex-Ray
 * 日志管理:docker logs、logspout
 * 安全性：openSCAP
-## 容器核心知识概述
-### 容器是如何工作的
-#### Docker架构
+## Docker架构
 * Docker客户端：Client
 * Docker服务器： Docker daemon
 * Docker 镜像： Image
