@@ -88,6 +88,22 @@ Linux设置进程使用CPU、内存和IO资源的限额
 * Network namespace: 让容器拥有自己独立的网卡、IP、路由等资源
 * User namespace：让容器管理自己的用户
 ## Docker网络
+### none网络
+只有lo网络
+* --network = none
+### host网络
+共享host的网络，性能高，端口可能冲突。可直接配置host的网络
+* --network = host
+### bridge网络(默认)
+* --network = bridge
+### user-defined网络
+### 容器间通信
+#### IP通信
+#### Docker DNS Server
+--name，只能在user-defined网络中使用
+#### joined容器
+### 将容器与外部世界连接
+### 容器访问外部世界（默认）
 ## Docker存储
 ## 多主机管理
 ## 容器网络
