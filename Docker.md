@@ -25,7 +25,25 @@
 * Docker 镜像： Image
 * Registry
 * Docker容器： Container
-  
+
 ![Docker架构](https://github.com/yzxsong/NoTe/blob/main/images/Docker/Docker%E6%9E%B6%E6%9E%84.png)
+## Docker镜像
+### 镜像的内部结构
+#### Base镜像
+* 不依赖其他镜像，从scratch构建
+* 其他镜像可以以此为基础进行扩展
+#### 镜像的分层结构
+* 优点：共享资源
+* 可写的容器层：所有对容器的改动都只会发生在容器层中
+
+![镜像的分层结构]()
+## Docker容器
+## Docker网络
+## Docker存储
+## 多主机管理
+## 容器网络
+## 容器监控
+## 日志管理
+## 数据管理
 ## 参考资料
 * 《每天5分钟玩转Docker容器技术》
