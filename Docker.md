@@ -65,6 +65,28 @@
 * 将镜像上传到Registry
 * 搭建私有Registry
 ## Docker容器
+### 运行容器
+* docker run： -d后台常驻、-it 交互式终端
+### 进入容器
+* attach：直接进入，不启用新进程
+* exec：打开新的终端，启动新进程
+### 资源限制
+#### 内存限额
+* -m/--memory： 设置内存限额
+* --memory-swap：设置内存swap的使用限额
+#### CPU限额
+* -c/--cpu-shares
+### 实现容器的底层技术
+#### cgroup
+Linux设置进程使用CPU、内存和IO资源的限额
+#### namespace
+管理host中全局唯一的资源，让每个容器都觉得只有自己在使用它。
+* Mount namespace：让容器看上去拥有整个文件系统
+* UTS namespace：让容器拥有自己的hostname
+* IPC namespace：让容器拥有自己的共享内存和信号量来实现进程间通信
+* PID namespace：让容器拥有一套独立的PID
+* Network namespace: 让容器拥有自己独立的网卡、IP、路由等资源
+* User namespace：让容器管理自己的用户
 ## Docker网络
 ## Docker存储
 ## 多主机管理
