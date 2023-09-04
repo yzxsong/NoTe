@@ -37,6 +37,33 @@
 * 可写的容器层：所有对容器的改动都只会发生在容器层中
 
 ![镜像的分层结构](https://github.com/yzxsong/NoTe/blob/main/images/Docker/%E9%95%9C%E5%83%8F%E7%9A%84%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84.png)
+### 构建镜像
+#### docker commit
+* 运行容器
+* 修改容器
+* 将容器保存为新的镜像
+#### Dockerfile
+* 从base镜像运行一个容器
+* 执行一条指令，对容器做修改
+* 执行类似docker commit的操作，生成一个新的镜像层
+* Docker再基于刚刚提交的镜像运行一个新容器
+* 重复上面操作
+##### 常用指令
+* FROM：指定base镜像
+* MAINTAINER：设置镜像的作者
+* COPY：将文件从build context复制到镜像
+* ADD：类似COPY、会自动解压
+* ENV：设置环境变量
+* EXPOSE：指定容器中的进行监听某个端口
+* VOLUME：将文件或目录声明为volume
+* WORKDIR：设置当前工作目录
+* RUN：在容器中运行指定的命令。执行命令并创建新的镜像层，经常用于安装软件包
+* CMD：容器启动时运行指定的命令。会被docker run 命令行后面的参数替换
+* ENTRYPOINT：设置容器启动时运行的命令，不会被忽略。可用CMD提供额外的参数
+### 分发镜像
+* 利用Dockerfile创建
+* 将镜像上传到Registry
+* 搭建私有Registry
 ## Docker容器
 ## Docker网络
 ## Docker存储
