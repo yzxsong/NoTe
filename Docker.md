@@ -36,7 +36,7 @@
 * 优点：共享资源
 * 可写的容器层：所有对容器的改动都只会发生在容器层中
 
-![镜像的分层结构]()
+![镜像的分层结构](https://github.com/yzxsong/NoTe/blob/main/images/Docker/%E9%95%9C%E5%83%8F%E7%9A%84%E5%88%86%E5%B1%82%E7%BB%93%E6%9E%84.png)
 ## Docker容器
 ## Docker网络
 ## Docker存储
